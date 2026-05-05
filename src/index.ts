@@ -1,5 +1,5 @@
 import express from 'express';
-import { graphRoutes } from './routes/graph.routes';
+import { graphRoutes } from './routes/graph.route';
 import { queryRoutes } from './routes/query.routes';
 
 async function startApp() {
