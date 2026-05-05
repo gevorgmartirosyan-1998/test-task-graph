@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",    /* Source files can live at project root */
+    "outDir": "./dist",   /* Compiled JS goes here */
+    
+    /* Other settings I recommend for this project */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true, /* Crucial for importing your JSON data [cite: 73] */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "engine/**/*", "data/**/*.json"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
