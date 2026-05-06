@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { routeController } from '../controller/route.controller';
+import { queryController } from '../controller/query.controller';
 
 const router = Router();
 
-router.get('/route', routeController);
+router.get('/route', queryController);
 
 export { router as queryRoutes };
