@@ -1,10 +1,8 @@
-import { Router, Request, Response } from 'express';
-import data from '../../data/graph.json';
+import { Router } from 'express';
+import { routeController } from '../controller/route.controller';
 
 const router = Router();
 
-router.get('/route', (req: Request, res: Response) => {
-    res.json({hello: 'route'});
-});
+router.get('/route', routeController);
 
 export { router as queryRoutes };
